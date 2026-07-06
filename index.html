@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book rides with AI — Super use case</title>
+  <meta name="description" content="Learn how to book rides with AI. See how Super compares ETAs, coordinates pickups, and reuses preferences with a computer-use cache." />
+  <link rel="canonical" href="https://app.getsupers.com/use-cases/book-rides-with-ai/" />
+  <meta property="og:title" content="Book rides with AI — Super" />
+  <meta property="og:description" content="A practical guide to using a personal AI agent to compare and coordinate rides." />
+  <meta property="og:url" content="https://app.getsupers.com/use-cases/book-rides-with-ai/" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div class="page">
+  <div class="ambient-grid"></div>
+  <div class="paper-noise"></div>
+
+  <nav class="nav">
+    <div class="brand"><img src="https://storage.googleapis.com/cheatlayer/landing/icon-transparent-512.png" alt="Super" /></div>
+    <div class="nav-links">
+      <a href="https://app.getsupers.com/use-cases/order-food-with-ai/">Order food with AI</a>
+      <a href="https://app.getsupers.com/use-cases/book-rides-with-ai/">Book rides with AI</a>
+      <a href="https://app.getsupers.com/use-cases/text-message-ai-assistant/">Text message AI assistant</a>
+      <a href="https://app.getsupers.com/use-cases/meta-display-ai-assistant/">Meta Display AI assistant</a>
+      <a href="https://app.getsupers.com/use-cases/ai-agent-build-websites/">AI agent to build websites</a>
+      <a href="https://app.getsupers.com/use-cases/computer-use-cache/">Computer-use cache</a>
+    </div>
+    <a class="btn btn-black nav-cta" href="https://app.getsupers.com/general?login=1&open_login=1">Try Super</a>
+  </nav>
+
+  <header class="hero">
+    <div class="shell hero-inner">
+      <h1>Book rides with AI — without juggling apps, ETAs, and pickup details</h1>
+      <p class="hero-sub">Super is a personal AI agent that can operate real ride‑hailing apps, compare options, and remember your repeat routes using a reusable computer-use cache.</p>
+      <div class="hero-actions">
+        <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Start with Super</a>
+        <a class="btn btn-white" href="#guide">Read the field guide</a>
+      </div>
+      <div class="media-frame">
+        <video src="https://storage.googleapis.com/cheatlayer/landing/hero-0607-2-3.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+  </header>
+
+  <section class="chapter" id="guide">
+    <div class="shell">
+      <article class="long-form-guide">
+        <p class="byline">Field guide by the Super editorial team · Updated July 2026</p>
+        <p class="direct-answer"><strong>Direct answer:</strong> You can use a personal AI agent like Super to compare ride options, coordinate pickups, and reuse your preferred routes. Super differs from assistants like Siri, ChatGPT, Gemini, Grok, Folk, or Orchids by actually operating a computer and reusing a computer-use cache so repeat bookings get smoother over time.</p>
+
+        <h2>Market context</h2>
+        <p>The idea of booking rides with AI sits at the intersection of consumer convenience and agentic automation. Ride‑hailing platforms already use sophisticated AI for pricing and dispatch, which means end users face fluctuating fares, variable ETAs, and changing pickup rules. Consumer Reports has shown that the same trip can surface different prices depending on timing and context, making manual comparison tedious. At the same time, major assistant platforms are racing toward computer control. Google has made computer use a first‑class capability inside Gemini, while Apple continues to evolve Siri as a voice‑first layer embedded in devices. OpenAI’s ChatGPT and xAI’s Grok are also expanding toward tool use and action execution. Niche players like Folk and Orchids experiment with automation layers, but often stop short of durable computer workflows.</p>
+        <p>What’s changed in 2026 is feasibility. With modern computer‑use agents, an AI can open real apps, read screens, and follow the same steps a human would. That power comes with safety concerns, as Search Engine Journal notes, but it also unlocks practical workflows like ride booking when paired with confirmations and scope limits. Super positions itself as an operator‑grade assistant: not just suggesting which ride to take, but actually coordinating the process while learning your habits. The differentiator is memory at the action level. Instead of re‑deciding every click, Super reuses a computer-use cache so common routes, pickup instructions, and app quirks don’t need to be relearned every time.</p>
+
+        <h2>How to evaluate and use this workflow</h2>
+        <h3>How to set up Super for ride comparisons</h3>
+        <p>Start by telling Super which ride services you already use and what matters most to you, such as fastest pickup, lowest price, or preferred vehicle type. Super doesn’t invent accounts; it operates the apps you authorize. The first time, expect a bit more back‑and‑forth as the agent learns your preferences and where confirmations are required. This initial run seeds the computer-use cache that later runs can reuse.</p>
+        <h3>How to request a ride with context</h3>
+        <p>When you ask Super to book a ride, include situational context like luggage, time sensitivity, or pickup constraints. Super can open multiple ride apps, check ETAs, and summarize trade‑offs before acting. Unlike Siri or Gemini, which often stop at suggestions, Super can proceed to the booking screen and pause for your explicit approval before confirming.</p>
+        <h3>How to reuse repeat routes efficiently</h3>
+        <p>For commutes or frequent trips, ask Super to remember the route and preferences. Over time, the computer-use cache stores the successful interaction pattern. That means fewer clarifying questions and faster execution, which is especially valuable if you travel weekly or manage rides for others.</p>
+        <h3>How to handle pickup coordination</h3>
+        <p>Pickup details cause most ride friction. Super can read driver messages, adjust pickup pins, and relay instructions, while keeping you in the loop. You still confirm changes, but you avoid constant app switching. This is an area where general chat assistants like ChatGPT or Grok typically fall short.</p>
+        <h3>How to review and confirm safely</h3>
+        <p>Before final confirmation, Super summarizes the ride choice, price range, ETA, and pickup notes. Treat this as a checklist moment. You stay accountable for the final tap, which aligns with best practices from agent‑safety research and avoids unintended purchases.</p>
+
+        <h2>Implementation checklist</h2>
+        <ul>
+          <li>Verify which ride apps you want Super to operate and ensure you are logged in on the device or cloud session it uses. This avoids failed attempts and keeps the computer-use cache clean and reliable.</li>
+          <li>Define your default priorities, such as cost ceiling or maximum wait time, in plain language. Clear constraints help the agent make fewer guesses and reduce confirmation friction.</li>
+          <li>Decide upfront which steps always require manual approval, especially payment confirmations. This balances automation with safety and mirrors guidance from agent design research.</li>
+          <li>Test the workflow on a low‑stakes ride first, like a short local trip. Early testing helps you see how Super interprets screens and messages before relying on it for critical travel.</li>
+          <li>Review saved routes periodically and prune ones you no longer use. A smaller, accurate computer-use cache improves speed and reduces the risk of outdated assumptions.</li>
+          <li>Document special pickup notes, such as building entrances or security desks, in your initial instructions so they become part of the reusable workflow.</li>
+        </ul>
+
+        <h2>Risks and limits</h2>
+        <p>First, pricing volatility means an AI agent cannot guarantee the “best” fare, only the best option at the moment it checks. Even with automation, underlying algorithms can change prices seconds later.</p>
+        <p>Second, computer‑use agents increase the attack surface. As highlighted by security researchers, any system that can click and type must be carefully scoped. Super mitigates this with confirmations, but users should stay vigilant.</p>
+        <p>Third, app UI changes can temporarily break cached workflows. While Super adapts, there may be moments where manual intervention is faster until the cache updates.</p>
+        <p>Fourth, assistants like Siri, ChatGPT, Gemini, Grok, Folk, and Orchids may be sufficient for simple reminders or suggestions. Super’s advantage appears mainly in repeat, operational workflows.</p>
+
+        <h2>FAQ</h2>
+        <h3>Does Super automatically pay for rides?</h3>
+        <p>No. Super assists with navigation and coordination but pauses for explicit user confirmation before final booking or payment. This design choice reflects current best practices in agent safety and keeps you in control.</p>
+        <h3>How is this different from using Siri or Gemini?</h3>
+        <p>Siri and Gemini excel at voice commands and suggestions but often stop short of multi‑step execution. Super is built to operate real interfaces end‑to‑end and reuse a computer-use cache for repeat tasks.</p>
+        <h3>Can ChatGPT or Grok do this?</h3>
+        <p>ChatGPT and Grok are evolving toward agents, but their strength today is still conversational reasoning. Super focuses narrowly on durable computer workflows, which matters for routine ride coordination.</p>
+        <h3>What about niche tools like Folk or Orchids?</h3>
+        <p>Folk and Orchids provide interesting automation experiments, but they are typically narrower in scope. Super aims to be a single personal agent across many everyday tasks, including rides.</p>
+        <h3>Is the computer-use cache safe?</h3>
+        <p>The cache stores patterns of successful actions, not sensitive secrets in plain text. You can review and reset it, which is important if your preferences or apps change.</p>
+        <h3>Who benefits most from booking rides with AI?</h3>
+        <p>Frequent travelers, busy professionals, and anyone managing rides for others gain the most. If you only book an occasional ride, simpler assistants may be enough.</p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li><a href="https://www.consumerreports.org/">Consumer Reports on ride pricing variability</a></li>
+          <li><a href="https://www.searchenginejournal.com/">Search Engine Journal on computer‑use agent security</a></li>
+          <li><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/gemini-computer-use-model/">Google DeepMind on computer use models</a></li>
+          <li><a href="https://www.anthropic.com/engineering/building-effective-agents">Anthropic on effective agent design</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="shell">
+      <h2>Try booking your next ride with a real AI agent</h2>
+      <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Get started with Super</a>
+    </div>
+  </section>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://app.getsupers.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Use cases", "item": "https://app.getsupers.com/use-cases/"},
+    {"@type": "ListItem", "position": 3, "name": "Book rides with AI", "item": "https://app.getsupers.com/use-cases/book-rides-with-ai/"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to book rides with AI using Super",
+  "step": [
+    {"@type": "HowToStep", "name": "Set up ride apps", "text": "Authorize Super to operate the ride apps you already use and clarify priorities like cost or speed."},
+    {"@type": "HowToStep", "name": "Request a ride", "text": "Ask Super to compare options, providing context such as timing or luggage."},
+    {"@type": "HowToStep", "name": "Review comparisons", "text": "Let Super summarize ETAs and prices before acting."},
+    {"@type": "HowToStep", "name": "Confirm booking", "text": "Approve the final booking step manually for safety."},
+    {"@type": "HowToStep", "name": "Reuse routes", "text": "Save repeat routes so the computer-use cache speeds up future bookings."}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Does Super automatically pay for rides?", "acceptedAnswer": {"@type": "Answer", "text": "No. Super requires explicit confirmation before any booking or payment."}},
+    {"@type": "Question", "name": "How is this different from Siri or Gemini?", "acceptedAnswer": {"@type": "Answer", "text": "They focus on suggestions, while Super executes workflows using computer use."}}
+  ]
+}
+</script>
+
+<script src="./app.js"></script>
+</body>
+</html>
